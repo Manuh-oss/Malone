@@ -1,0 +1,171 @@
+.fine{
+    color: blue;
+    font-style: normal;
+}
+.wave{
+    color: red;
+    font-style: normal;
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;    
+}
+.list{
+    display: flex;
+    left:50% ; 
+    top: 200px;
+    position: absolute;
+    gap: 10px;
+    width:300px ;  
+}
+
+.items{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    gap: 10px;
+    
+}
+.items img{
+    width: 200px;
+    height: 100%;
+}
+.contents{
+    position: absolute;
+    bottom: 10px;
+    
+}
+
+.sell{
+    display: none;
+    color: whitesmoke;
+}
+.satelite{
+    color: gold;
+    display: none;
+}
+button{
+    height: 40px;
+    width: 40px;
+    position:fixed;
+    bottom: 10px;
+    left: 70px;
+    top: 500px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+button:hover{
+    background-color: greenyellow;
+}
+.prev{
+    height: 40px;
+    left: 20px;
+    width: 40px;
+}
+.itembtn{
+    display: none;
+}
+.items:nth-child(1) img{ 
+    width: 1440px;
+    height: 100vh;
+    position:fixed;
+    inset: 0  0;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    
+}
+.items:nth-child(1) { 
+    width: 1440px;
+    height: 100vh;
+    position:fixed;
+    inset: 0 0 0 0;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    
+}
+.items:nth-child(1) .satelite{
+    bottom: 400px;
+    position: absolute;
+    font-style: normal;
+    font-size: larger;
+    left: 50px;
+    animation: hello 3s ease-in-out 0.0007s  forwards;
+    display: block;
+}
+.items:nth-child(1) .sell{
+    bottom: 220px;
+    position: absolute;
+    font-style: normal;
+    font-size: larger;
+    left: 50px;
+    display: block;
+    width: 200px;
+    animation: hello 3s ease-in-out 0.0007s  forwards;
+
+}
+.items:nth-child(1) .itembtn{
+    display: flex;
+    position: absolute;
+    bottom:160px;
+    width: 160px;
+    height: 40px;
+    left: 100px;
+    animation: hello 3s ease-in-out 0.0007s  forwards;
+
+    
+} 
+.items:nth-child(1) .rada{
+    margin-left: 10px;
+    border: 1px solid black ;
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background-color: transparent;
+    height: 40px;
+    
+}
+.items:nth-child(1) .yoh{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    padding-top: 10px;
+    color: black;
+    background-color: whitesmoke;
+    
+}
+.items:nth-child(1) .yoh:hover{
+    background-color: blue;
+    color: beige;
+}
+.items:nth-child(1) .rada:hover{
+    background-color: red;
+    color: black;
+}
+.items:nth-child(2) .sell{
+    color: white;
+}
+
+
+@keyframes hello{
+    to{ 
+        opacity: 1;
+    }
+    
+    from{
+        opacity: 0;
+    }
+}
+
+ 

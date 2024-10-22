@@ -1,0 +1,110 @@
+form{
+    border: solid 1px grey;
+    width: 35%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 33.33%;
+    background-color: white;
+    height: 75%;
+    margin-top: 40px;
+    top: 70px;
+    margin-bottom: 50px;
+    bottom: 50px;
+}
+.input {
+    display: block;
+    gap: 10px;
+}
+.name input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    position: relative;
+    margin-bottom: 25px;
+    overflow: none;
+}
+.email input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.password input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    bottom: 10px;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.cpassword input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    bottom: 10px;
+    position: relative;
+    margin-bottom: 25px;
+}
+.container img{
+    width: 100%;
+    inset: 0 0 0 0;
+    height: 100vh;
+    position: relative;
+    bottom: 0px;
+}
+button{
+    background-color: blue;
+    color: whitesmoke;
+    border: 1px solid black;
+    width: 50%;
+}
+.checkbox input{
+    position: absolute;
+    left: 2px;
+}
+.me{
+    left: 5px;
+    position: absolute;
+}
+.yoh{
+    margin-top: 35px;
+    left: 5px;
+}
+form{
+    z-index: 100;
+    top: 0;
+}
+.fine{
+    color: blue;
+    font-style: normal;
+}
+.wave{
+    color: red;
+    font-style: normal;
+}
+.tech{
+    color: whitesmoke;
+}
+.finewave{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+.contaner{
+    position:fixed;
+
+}
+.contaner img{
+    position: fixed;
+    width: 1440px;
+    height: 100vh;
+    inset: 0 0 0 0 ;
+}

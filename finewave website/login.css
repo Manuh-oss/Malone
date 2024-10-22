@@ -1,0 +1,71 @@
+.fine{
+    color: blue;
+    font-style: normal;
+}
+.wave{
+    color: red;
+    font-style: normal;
+}
+.tech{
+    color: whitesmoke;
+}
+.finewave{
+    position: absolute;
+    top: 0;
+}
+header{
+    position: fixed;
+}
+form{
+    position:absolute;
+    border: 1px solid aqua;
+    width: 30%;
+    top: 30px; 
+    right: 33.33%;
+    left: 34%;
+    text-align: center;
+    background-color: white;
+    height: 50%;
+    bottom: 330px;
+}
+.forgot{
+    position: absolute;
+    left: 10px;
+    font-size: small;
+}
+.create{
+    position: absolute;
+    left: 75%;
+    font-size: small;
+    margin-top: 15px;
+}
+button{
+    background-color: blue;
+    color: whitesmoke;
+    border: 1px solid black;
+    width: 50%;
+}
+.input {
+    display: block;
+    gap: 10px;
+}
+.name input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: none;
+}
+.email input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 20px;
+}
