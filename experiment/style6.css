@@ -1,0 +1,35 @@
+.sidenav{
+    height: 100%;
+    width: 170px;
+    background-color: grey;
+}
+/**head text**/
+.fine{
+    color: blue;
+    font-style: normal;   
+    }
+.wave{
+    color: red;
+    font-style: normal;
+}
+/**head buttons**/
+.headbtns{
+    display: block;
+    gap: 10px;
+    position: relative;
+    width: 100px;
+    background-color: white;
+}
+.headbtns a img{
+    position: absolute;
+    background-color: white;
+    margin-bottom: 7px;
+    left: 40px;
+    
+}
+.headbtns a p {
+    color: red;
+    left: 20px;
+    
+}
+    
