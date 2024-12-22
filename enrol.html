@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="enrol.css">
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img width="40px" src="hd_a7dccd243da2f4aa7fb8b2289e299288.jpg" alt="">
+        <div class="name">
+            <h5>SIBIAH STAR</h5>
+            <h6>SCHOOL </h6>
+        </div>
+     </div>
+   </header> 
+   <main>
+    <form action="enrol.php" method="post">
+        <h1>Student Details</h1>
+      <div class="select">  
+        <div class="name">
+            <label for="first"> <h2>First name</h2></label>
+            <label for="first"> <h2>Middle name</h2></label>
+            <label for="first"> <h2>Last name</h2></label>
+            <label for="first"> <h2>Date of birth</h2></label>
+            <label for="first"> <h2>Addmission</h2></label>
+            <label for="first"> <h2>Gender</h2></label>
+            <label for="first"> <h2>Class</h2></label>
+        </div>
+        <div class="input">
+            <input type="text" name="first" required><br>
+            <input type="text" name="middle" required><br>
+            <input type="text" name="last" required><br>
+            <input type="date" name="datte" required><br>
+            <input type="number" name="admission" required><br>
+            <select name="gender" id="">
+                <option  value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            <select name="class" id="">
+                <option value="Form1">Form1</option>
+                <option value="Form2">Form2</option>
+                <option value="Form3">Form3</option>
+                <option value="Form4">Form4</option>
+            </select>
+        </div>
+    </div> 
+    <div class="btn">
+        <a href="#">
+            <button type="submit">Submit</button>
+        </a>
+        <a href="">
+            <button type="reset">Reset</button>
+        </a>
+    </div>
+    </form>
+   </main>
+</body>
+</html>

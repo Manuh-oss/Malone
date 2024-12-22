@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asign.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img width="40px" src="hd_a7dccd243da2f4aa7fb8b2289e299288.jpg" alt="">
+            <div class="name">
+                <h5>SIBIAH STAR</h5>
+                <h6>SCHOOL </h6>
+            </div>
+         </div>
+    </header>
+    <main>
+        <h1>School Rules & Regulations</h1>
+    </main>
+    <table>
+        <tr>
+            <th>id</th>
+          <th>A.D.N</th>
+          <th>Name</th>
+          <th>Subject</th>
+        </tr>
+        <?php
+          include("connection.php");
+          $sql = "select * FROM  resuls ";
+          $result = $conn->query($sql);
+          if($result->num_rows > 0):?>
+          <?php while($row = $result->fetch_assoc()):?>
+            <tr>          
+              <td><input type="hidden" name="id[]" value= "<?php echo $row['id'];?>"><?php echo $row['id']?> </td>
+              <td><?php echo $row['addmission']?></td>
+              <td><?php echo $row['firstname'].$row['middlename'].$row['lastname']?></td><br>
+              <td><input type='number' placeholder='english' name='eng[]' value="<?php$row['english']?>"></td>
+            </tr>
+            <?php endwhile ;?>
+            <?php else:?>
+            <tr>
+              <td colspan="3">NO RECORDS FOUND!!!</td>
+            </tr>
+            <?php endif?>
+          </table>
+        <button type="submit">Upload</button>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.logo{
+    display: flex;
+    margin-left: 40px;
+}
+.logo img{
+    height: 80px;
+}
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color:whitesmoke ;
+    top: 0px;
+    z-index: 10;
+}
+main{
+    margin-top: 100px;
+}
+.details h2{
+    color: white;
+    margin-left: 20px;
+}
+.head{
+    background-color:purple ;
+    height: 30px;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.mine{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+}
+table{
+    width: 50%;
+    margin-left: 25%;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: 12.5%;
+}
+.mines{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 15%;
+}

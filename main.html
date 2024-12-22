@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/ef135ecc0c.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+</head>
+<body>
+    <header>
+         <div class="logo">
+            <img width="40px" src="hd_a7dccd243da2f4aa7fb8b2289e299288.jpg" alt="">
+            <div class="name">
+                <h5>SIBIAH STAR</h5>
+                <h6>SCHOOL </h6>
+            </div>
+         </div>
+         <div class="yohh">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+         </div>         
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="onlineportal.html">Online portal</a>
+            <a href="#">Admission Form</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+          </div>          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+    </header>
+    <main>
+        <section>
+            <div class="slideshowcontainer">
+                <div class="slide fade">
+                    <img src="hd_a7dccd243da2f4aa7fb8b2289e299288.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="hd_02cf9d7ca9af1fc485da0c3fa85d7e67.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="hd_6fe98510015f21f4d2b6d50574c23fda.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="hd_a7dccd243da2f4aa7fb8b2289e299288.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="hd_d56afd29562d39e32c853c395892a15d.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Our Vision, Mission and Values</h1>
+            <div class="our">
+                <div class="vision">
+                    <h1>Vision</h1>
+                </div>
+                <div class="vision">
+                    <h1>Mission</h1>
+                </div>
+                <div class="vision">
+                      <h1>Values</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="history">
+                <h1>WELCOME TO "SCHOOL NAME"</h1>
+                <div class="desc"> </div>
+            </div>  
+            <div class="instituition">
+                <div class="years">
+                    <h1>50</h1>
+                    <p>Years of academic excellence</p>
+                </div>
+                <div class="years">
+                    <h1>100%</h1>
+                    <p>Graduationg seniors accepted into High Schools and reputable instituitions of higher learning.</p>
+                </div>
+                <div class="years">
+                    <h1>100%</h1>
+                    <p>Of students participate in social extra-curricular activities</p>
+                </div>
+            </div>  
+        </section>
+        <section>
+            <h1 style="font-style: unset; color: purple;">TAKE A VIRTUAL TOUR OF OUR SCHOOL.</h1>
+            <video controls  src=""></video>
+        </section>
+        <section>
+            <h1 style="font-style: normal; color: purple;">Join Our Schools</h1>
+            <div class="enrol">
+                <div class="fees">
+                    <p>Become a part of school family</p>
+                    <i class="fa-solid fa-people-group"></i>
+                    <button> <H5> ENROL NOW </H5></button>
+                </div>
+                <div class="fees">                    
+                    <P>Review por admmision terms prior to joining</P>
+                    <i class="fa-solid fa-clipboard"></i>
+                    <a href="">
+                        <button> <H5>VIEW FEES & TERMS</H5></button>
+                    </a>
+                </div>
+                <div class="fees">
+                    <P>View our school location</P>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="">
+                        <button><H5>VIEW NOW</H5></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <script>
+            let slideIndex = 0;
+            showSlides()
+            function showSlides() {
+                let slides = document.getElementsByClassName("slide");
+
+                for( let i = 0; i < slides.length; i++){
+                     slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if(slideIndex > slides.length){slideIndex = 1}
+
+                slides[slideIndex - 1].style.display= "block";
+                setTimeout(showSlides, 3000);
+
+                function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+            }
+        </script>
+    </main>
+    <FOOTER>
+        <div class="contact">
+            <h2>CONTACT US:</h2>
+             <ADDRESS>
+                RIARA GROUP OF Schools <br>
+                P.O BOX <BR>
+                NAIROBI    
+             </ADDRESS>
+             <H3>Call us:</H3>
+             <h3>Or:</h3>
+             <h3>Email us:</h3>
+        </div>
+    </FOOTER>
+    <footer class="yoh">
+        &copy;copywrite 2024 "schoolname"<br>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </footer>
+</body>
+</html>

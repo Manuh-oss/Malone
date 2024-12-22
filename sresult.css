@@ -1,0 +1,62 @@
+.logo{
+    display: flex;
+    margin-left: 40px;
+}
+.logo img{
+    height: 80px;
+}
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color:whitesmoke ;
+    top: 0px;
+    z-index: 10;
+}
+main{
+    margin-top: 102px;
+}
+.main{
+    display: flex;
+    width: 75%;
+    margin-left: 12.5%;
+    height: 250px;
+    gap:40px ;
+    justify-content: space-between;
+}
+.profile{
+    width: 48%;
+    text-align: left;
+    background-color: whitesmoke;
+}
+.profileS{
+    width: 48%;
+    text-align: center;
+    background-color: whitesmoke;
+    display: block;
+}
+.yoh{
+    display: flex;
+    gap: 25%;
+    margin-left: 40px;
+    height: 130px;
+}
+.yoh label h4{
+    margin-bottom: 20px;
+}
+label,h4{
+    margin-left: 20px;
+}
+.marks{
+    width: 50%;
+    margin-left: 25%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+table{
+    width: 50%;
+    margin-left: 23%;
+}
+
+

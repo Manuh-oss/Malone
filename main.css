@@ -1,0 +1,106 @@
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{opacity: 0.4;}
+    to{opacity: 1;}
+}
+.slide{
+    display: none;
+}
+.slideshowcontainer{
+    width: 100%;
+    height: 500px;
+}
+.slide img{
+    width: 75%;
+    height: 500px;
+    margin-left: 12.5%;
+}
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color:whitesmoke ;
+    top: 0px;
+    z-index: 10;
+}
+.nav{
+    position: relative;
+    margin-left: 80%;
+    margin-top: -40px;
+}
+.logo{
+    display: flex;
+    margin-left: 40px;
+}
+.logo img{
+    height: 80px;
+}
+.enrol{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-between;
+}
+.name{
+    margin-left: 5px;
+    margin-top: -10px;
+    gap: -10px;
+}
+main{
+    margin-top: 102px;
+}
+.our h1{
+    color: white;
+    margin-left: 20px;
+}
+.our{
+    display: flex;
+    justify-content: space-between;
+}
+.vision{
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+}
+.history h1{
+    font-style: unset;
+    color: purple;
+}
+.instituition{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-between;
+}
+.years{
+     text-align: center;
+     width: 200px;
+}
+.years h1{
+     color: purple;
+     font-size: 30px;
+}
+video{
+    height: 500px;
+    width: 75%;
+    margin-left: 12.5%;
+}
+footer{
+    background-color: navy;
+    color: white;
+    width: 100%;
+    height: 300px;
+}
+footer .contact{
+    margin-left: 20px;
+    top: 10px;
+    position: relative;
+}
+.yoh{
+    margin-top: 2px;
+    height: 50px;
+}
+.yohh{
+    margin-left: 80%;
+}
